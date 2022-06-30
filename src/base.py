@@ -4,9 +4,9 @@ from os.path import expanduser
 import os
 from utils.handle_credentials import Window_save_credentials, read_credentials
 from utils.handle_download import start_download
-import configparser
 
-logo_path = "C:\\Users\\kotthoff\\Documents\\Course Material\\TKinter_Codemy\\img\\logo_open_mastr.ico"
+logo_path = os.path.join(os.path.dirname(__file__) + "\\img\\logo_open_mastr.ico")
+
 window_title = "open-MaStR Desktop"
 credentials_file_path = os.path.join(
     expanduser("~"), ".open-MaStR", "config", "credentials2.cfg"
